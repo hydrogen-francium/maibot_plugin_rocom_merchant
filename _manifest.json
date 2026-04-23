@@ -1,0 +1,30 @@
+{
+  "manifest_version": 1,
+  "name": "洛克王国远行商人",
+  "version": "1.0.0",
+  "description": "洛克王国远行商人查询与订阅播报插件（MaiBot 版本，支持图片渲染）。",
+  "author": {
+    "name": "rocom-maibot-port"
+  },
+  "license": "MIT",
+  "host_application": {
+    "min_version": "0.7.0"
+  },
+  "keywords": ["rocom", "洛克王国", "远行商人", "wegame"],
+  "categories": ["External Integration", "Utility Tools"],
+  "default_locale": "zh-CN",
+  "plugin_info": {
+    "is_built_in": false,
+    "plugin_type": "general",
+    "components": [
+      {"type": "command", "name": "merchant_query", "description": "查询当前远行商人商品（图文）"},
+      {"type": "command", "name": "merchant_subscribe", "description": "订阅远行商人推送（仅管理员）"},
+      {"type": "command", "name": "merchant_unsubscribe", "description": "取消远行商人推送（仅管理员）"},
+      {"type": "command", "name": "merchant_broadcast", "description": "临时开关定时播报（仅管理员）"},
+      {"type": "command", "name": "merchant_rewrite", "description": "临时开关播报 LLM 重写（仅管理员）"},
+      {"type": "command", "name": "merchant_list_subscriptions", "description": "查看远行商人订阅列表（仅管理员）"},
+      {"type": "command", "name": "rocom_egg_search", "description": "查蛋 / 身高体重反查"},
+      {"type": "command", "name": "rocom_breeding", "description": "配种判定 / 想孵某精灵"}
+    ]
+  }
+}
