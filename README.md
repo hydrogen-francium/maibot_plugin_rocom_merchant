@@ -1,0 +1,2 @@
+# maibot_plugin_rocom_merchant
+轻量化麦麦洛克王国远行商人插件
